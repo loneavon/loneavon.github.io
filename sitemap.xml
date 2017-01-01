@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://levincode.com/2017/01/test-for-hexo/</loc>
+    
+    <lastmod>2017-01-01T14:51:18.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://levincode.com/categories/index.html</loc>
     
     <lastmod>2017-01-01T14:42:33.000Z</lastmod>
@@ -23,21 +30,7 @@
   </url>
   
   <url>
-    <loc>http://levincode.com/2017/01/sitemap/</loc>
-    
-    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://levincode.com/2016/09/algorithm/</loc>
-    
-    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://levincode.com/2016/09/emacs-configure/</loc>
+    <loc>http://levincode.com/2016/09/graph/</loc>
     
     <lastmod>2017-01-01T06:19:16.000Z</lastmod>
     
@@ -65,27 +58,6 @@
   </url>
   
   <url>
-    <loc>http://levincode.com/2017/01/theindex/</loc>
-    
-    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://levincode.com/2016/09/graph/</loc>
-    
-    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://levincode.com/2017/01/to-integrate-kafka-manager-on-ambari/</loc>
-    
-    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://levincode.com/2016/09/other/</loc>
     
     <lastmod>2017-01-01T06:19:16.000Z</lastmod>
@@ -107,16 +79,23 @@
   </url>
   
   <url>
-    <loc>http://levincode.com/2016/09/learning-spark-streaming/</loc>
+    <loc>http://levincode.com/2016/09/algorithm/</loc>
     
     <lastmod>2017-01-01T06:19:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://levincode.com/2017/01/hello-world/</loc>
+    <loc>http://levincode.com/2016/09/emacs-configure/</loc>
     
-    <lastmod>2016-12-31T18:31:00.000Z</lastmod>
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://levincode.com/2016/09/learning-spark-streaming/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
     
   </url>
   
