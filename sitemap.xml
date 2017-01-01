@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://levincode.com/categories/index.html</loc>
+    
+    <lastmod>2017-01-01T14:42:33.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://levincode.com/tags/index.html</loc>
+    
+    <lastmod>2017-01-01T14:42:01.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://levincode.com/2016/09/django/</loc>
     
     <lastmod>2017-01-01T06:31:37.000Z</lastmod>
@@ -9,42 +23,7 @@
   </url>
   
   <url>
-    <loc>http://levincode.com/2016/09/learning-design-pattern/</loc>
-    
-    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://levincode.com/2016/09/use-org-mode-for-GTD/</loc>
-    
-    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://levincode.com/2016/09/emacs-configure/</loc>
-    
-    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://levincode.com/2016/09/fluentd_install/</loc>
-    
-    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://levincode.com/2016/09/flume/</loc>
-    
-    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://levincode.com/2016/09/graph/</loc>
+    <loc>http://levincode.com/2017/01/sitemap/</loc>
     
     <lastmod>2017-01-01T06:19:16.000Z</lastmod>
     
@@ -58,21 +37,28 @@
   </url>
   
   <url>
-    <loc>http://levincode.com/2016/09/learning-spark-streaming/</loc>
+    <loc>http://levincode.com/2016/09/emacs-configure/</loc>
     
     <lastmod>2017-01-01T06:19:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://levincode.com/2016/09/other/</loc>
+    <loc>http://levincode.com/2016/09/learning-design-pattern/</loc>
     
     <lastmod>2017-01-01T06:19:16.000Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://levincode.com/2017/01/sitemap/</loc>
+    <loc>http://levincode.com/2016/09/flume/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://levincode.com/2016/09/fluentd_install/</loc>
     
     <lastmod>2017-01-01T06:19:16.000Z</lastmod>
     
@@ -86,6 +72,13 @@
   </url>
   
   <url>
+    <loc>http://levincode.com/2016/09/graph/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://levincode.com/2017/01/to-integrate-kafka-manager-on-ambari/</loc>
     
     <lastmod>2017-01-01T06:19:16.000Z</lastmod>
@@ -93,7 +86,28 @@
   </url>
   
   <url>
+    <loc>http://levincode.com/2016/09/other/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://levincode.com/2016/09/tool-stack/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://levincode.com/2016/09/use-org-mode-for-GTD/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://levincode.com/2016/09/learning-spark-streaming/</loc>
     
     <lastmod>2017-01-01T06:19:16.000Z</lastmod>
     
