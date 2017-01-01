@@ -1,0 +1,206 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> 算法和数据结构学习 · LevinCode</title><meta name="description" content="算法和数据结构学习 - Levin Lee"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><div id="mask" style="display: none;"><img id="mask-image" src="#" style=" "></div><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/tags/" target="_self" class="nav-list-link">TAGS</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">算法和数据结构学习</h1><div class="post-time">Sep 8, 2016</div><div class="post-content">
+
+<div id="table-of-contents">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents">
+<ul>
+<li><a href="#sec-1">1. &#x7B97;&#x6CD5;</a>
+<ul>
+<li><a href="#sec-1-1">1.1. &#x7B97;&#x6CD5;&#x57FA;&#x672C;&#x601D;&#x60F3;</a></li>
+<li><a href="#sec-1-2">1.2. &#x7B97;&#x6CD5;&#x8BE6;&#x89E3;</a>
+<ul>
+<li><a href="#sec-1-2-1">1.2.1. &#x6392;&#x5E8F;&#x7B97;&#x6CD5;</a></li>
+<li><a href="#sec-1-2-2">1.2.2. &#x5176;&#x4ED6;&#x7B97;&#x6CD5;</a></li>
+</ul>
+</li>
+<li><a href="#sec-1-3">1.3. &#x5E38;&#x7528;&#x6570;&#x636E;&#x7ED3;&#x6784;</a>
+<ul>
+<li><a href="#sec-1-3-1">1.3.1. &#x94FE;&#x8868;</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-sec-1" class="outline-2">
+<h2 id="sec-1"><span class="section-number-2">1</span> &#x7B97;&#x6CD5;</h2>
+<div class="outline-text-2" id="text-1">
+</div><div id="outline-container-sec-1-1" class="outline-3">
+<h3 id="sec-1-1"><span class="section-number-3">1.1</span> &#x7B97;&#x6CD5;&#x57FA;&#x672C;&#x601D;&#x60F3;</h3>
+<div class="outline-text-3" id="text-1-1">
+<p>
+&#x679A;&#x4E3E;: &#x4E00;&#x4E2A;&#x96C6;&#x7684;&#x679A;&#x4E3E;&#x662F;&#x5217;&#x51FA;&#x67D0;&#x4E9B;&#x6709;&#x7A77;&#x5E8F;&#x5217;&#x96C6;&#x7684;&#x6240;&#x6709;&#x6210;&#x5458;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x4E00;&#x79CD;&#x7279;&#x5B9A;&#x7C7B;&#x578B;&#x5BF9;&#x8C61;&#x7684;&#x8BA1;&#x6570;&#x3002;&#x8FD9;&#x4E24;&#x79CD;&#x7C7B;&#x578B;&#x7ECF;&#x5E38;&#xFF08;&#x4F46;&#x4E0D;&#x603B;&#x662F;&#xFF09;&#x91CD;&#x53E0;&#x3002;
+&#x9012;&#x5F52;: &#x4E00;&#x79CD;&#x901A;&#x8FC7;&#x91CD;&#x590D;&#x5C06;&#x95EE;&#x9898;&#x5206;&#x89E3;&#x4E3A;&#x540C;&#x7C7B;&#x7684;&#x5B50;&#x95EE;&#x9898;&#x800C;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#x7684;&#x65B9;&#x6CD5;
+&#x5206;&#x6CBB;: &#x57FA;&#x4E8E;&#x9012;&#x5F52;&#x7B97;&#x6CD5;, &#x4E00;&#x4E2A;&#x590D;&#x6742;&#x7684;&#x95EE;&#x9898;&#x5206;&#x6210;&#x4E24;&#x4E2A;&#x6216;&#x66F4;&#x591A;&#x7684;&#x76F8;&#x540C;&#x6216;&#x76F8;&#x4F3C;&#x7684;&#x5B50;&#x95EE;&#x9898;&#xFF0C;&#x76F4;&#x5230;&#x6700;&#x540E;&#x5B50;&#x95EE;&#x9898;&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x7684;&#x76F4;&#x63A5;&#x6C42;&#x89E3;&#xFF0C;&#x539F;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x5373;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x7684;&#x5408;&#x5E76;&#x3002;
+&#x5E7F;&#x4E49;&#x4E4B;&#x4E0B;&#xFF0C;&#x6240;&#x6709;&#x4F7F;&#x7528;&#x9012;&#x5F52;&#x6216;&#x5FAA;&#x73AF;&#x7684;&#x7B97;&#x6CD5;&#x5747;&#x88AB;&#x89C6;&#x4F5C;&#x201C;&#x5206;&#x6CBB;&#x7B97;&#x6CD5;&#x201D;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6709;&#x4E9B;&#x4F5C;&#x8005;&#x8003;&#x8651;&#x201C;&#x5206;&#x6CBB;&#x6CD5;&#x201D;&#x8FD9;&#x4E2A;&#x540D;&#x79F0;&#x5E94;&#x53EA;&#x7528;&#x4E8E;&#x6BCF;&#x4E2A;&#x6709;&#x6700;&#x5C11;&#x4E24;&#x4E2A;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x7B97;&#x6CD5;&#x3002;&#x800C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x66FE;&#x88AB;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x51CF;&#x6CBB;&#x6CD5;&#x8FD9;&#x4E2A;&#x540D;&#x79F0;&#x3002;
+&#x52A8;&#x6001;&#x89C4;&#x5212;: &#x8981;&#x89E3;&#x4E00;&#x4E2A;&#x7ED9;&#x5B9A;&#x95EE;&#x9898;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x89E3;&#x5176;&#x4E0D;&#x540C;&#x90E8;&#x5206;&#xFF08;&#x5373;&#x5B50;&#x95EE;&#x9898;&#xFF09;&#xFF0C;&#x518D;&#x5408;&#x5E76;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x4EE5;&#x5F97;&#x51FA;&#x539F;&#x95EE;&#x9898;&#x7684;&#x89E3;
+&#x8D2A;&#x5FC3;: &#x5728;&#x6BCF;&#x4E00;&#x6B65;&#x9009;&#x62E9;&#x4E2D;&#x90FD;&#x91C7;&#x53D6;&#x5728;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x4E0B;&#x6700;&#x597D;&#x6216;&#x6700;&#x4F18;&#xFF08;&#x5373;&#x6700;&#x6709;&#x5229;&#xFF09;&#x7684;&#x9009;&#x62E9;&#xFF0C;&#x4ECE;&#x800C;&#x5E0C;&#x671B;&#x5BFC;&#x81F4;&#x7ED3;&#x679C;&#x662F;&#x6700;&#x597D;&#x6216;&#x6700;&#x4F18;&#x7684;&#x7B97;&#x6CD5;
+&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x5728;&#x6709;&#x6700;&#x4F18;&#x5B50;&#x7ED3;&#x6784;&#x7684;&#x95EE;&#x9898;&#x4E2D;&#x5C24;&#x4E3A;&#x6709;&#x6548;&#x3002;&#x6700;&#x4F18;&#x5B50;&#x7ED3;&#x6784;&#x7684;&#x610F;&#x601D;&#x662F;&#x5C40;&#x90E8;&#x6700;&#x4F18;&#x89E3;&#x80FD;&#x51B3;&#x5B9A;&#x5168;&#x5C40;&#x6700;&#x4F18;&#x89E3;&#x3002;&#x7B80;&#x5355;&#x5730;&#x8BF4;&#xFF0C;&#x95EE;&#x9898;&#x80FD;&#x591F;&#x5206;&#x89E3;&#x6210;&#x5B50;&#x95EE;&#x9898;&#x6765;&#x89E3;&#x51B3;&#xFF0C;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;&#x80FD;&#x9012;&#x63A8;&#x5230;&#x6700;&#x7EC8;&#x95EE;&#x9898;&#x7684;&#x6700;&#x4F18;&#x89E3;
+&#x8D2A;&#x5FC3;&#x7B97;&#x6CD5;&#x4E0E;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x7684;&#x4E0D;&#x540C;&#x5728;&#x4E8E;&#x5B83;&#x6BCF;&#x5BF9;&#x6BCF;&#x4E2A;&#x5B50;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x90FD;&#x505A;&#x51FA;&#x9009;&#x62E9;&#xFF0C;&#x4E0D;&#x80FD;&#x56DE;&#x9000;&#x3002;&#x52A8;&#x6001;&#x89C4;&#x5212;&#x5219;&#x4F1A;&#x4FDD;&#x5B58;&#x4EE5;&#x524D;&#x7684;&#x8FD0;&#x7B97;&#x7ED3;&#x679C;&#xFF0C;&#x5E76;&#x6839;&#x636E;&#x4EE5;&#x524D;&#x7684;&#x7ED3;&#x679C;&#x5BF9;&#x5F53;&#x524D;&#x8FDB;&#x884C;&#x9009;&#x62E9;&#xFF0C;&#x6709;&#x56DE;&#x9000;&#x529F;&#x80FD;
+</p>
+
+<p>
+&#x603B;&#x7ED3;:
+</p>
+<ol class="org-ol">
+<li>&#x5C06;&#x590D;&#x6742;&#x95EE;&#x9898;&#x62C6;&#x89E3;&#x4E3A;&#x7B80;&#x5355;&#x53EF;&#x91CD;&#x590D;&#x95EE;&#x9898;
+</li>
+</ol>
+</div>
+</div>
+<div id="outline-container-sec-1-2" class="outline-3">
+<h3 id="sec-1-2"><span class="section-number-3">1.2</span> &#x7B97;&#x6CD5;&#x8BE6;&#x89E3;</h3>
+<div class="outline-text-3" id="text-1-2">
+</div><div id="outline-container-sec-1-2-1" class="outline-4">
+<h4 id="sec-1-2-1"><span class="section-number-4">1.2.1</span> &#x6392;&#x5E8F;&#x7B97;&#x6CD5;</h4>
+<div class="outline-text-4" id="text-1-2-1">
+</div><ol class="org-ol"><li><a id="sec-1-2-1-1" name="sec-1-2-1-1"></a>&#x5FEB;&#x901F;&#x6392;&#x5E8F;(&#x5FEB;&#x6392;)<br><div class="outline-text-5" id="text-1-2-1-1">
+<p>
+&#x7B97;&#x6CD5;&#x63CF;&#x8FF0;:
+</p>
+<ol class="org-ol">
+<li>&#x9009;&#x53D6;&#x5F85;&#x6392;&#x5E8F;&#x5217;&#x8868;&#x4E2D;&#x67D0;&#x4E2A;&#x5143;&#x7D20;&#x4F5C;&#x4E3A; key&#xFF0C;&#x8BB0;&#x5F55;&#x5217;&#x8868;&#x8D77;&#x59CB; &amp; &#x7EC8;&#x6B62;&#x70B9;&#x4E3A;&#x5DE6;&#x6307;&#x9488; &amp; &#x53F3;&#x6307;&#x9488;
+</li>
+<li>&#x4ECE;&#x5DE6;&#x81F3;&#x53F3;&#x904D;&#x5386;&#x5217;&#x8868;&#xFF0C;&#x9047;&#x5230;&#x5927;&#x4E8E;&#x6216;&#x8005;&#x7B49;&#x4E8E; key &#x65F6;&#x83B7;&#x53D6;&#x65B0;&#x7684;&#x5DE6;&#x6307;&#x9488; &amp; &#x5C0F;&#x4E8E;&#x6216;&#x8005;&#x7B49; key &#x65F6;&#x83B7;&#x53D6;&#x65B0;&#x7684;&#x53F3;&#x6307;&#x9488;&#xFF0C;&#x4EA4;&#x6362;&#x5DE6;&#x53F3;&#x6307;&#x9488;&#x7684;&#x6570;&#x636E;
+</li>
+<li>&#x5DE6;&#x6307;&#x9488;&#x4F4D;&#x7F6E;&#x5C0F;&#x4E8E;&#x53F3;&#x6307;&#x9488;&#x4F4D;&#x7F6E;&#x65F6;&#xFF0C;&#x91CD;&#x590D;&#x4EE5;&#x4E0A;&#x8FC7;&#x7A0B;&#xFF0C;&#x7EC8;&#x6B62;&#x65F6;&#x4EA4;&#x6362;&#x8D77;&#x59CB;&#x4F4D;&#x7F6E;&#x5143;&#x7D20;&#x548C;&#x6700;&#x7EC8;&#x5DE6;&#x6307;&#x9488;&#x7684;&#x5143;&#x7D20;
+</li>
+<li>&#x5C06; key &#x4E24;&#x8FB9;&#x7684;&#x5B50;&#x5217;&#x8868;&#x91CD;&#x590D;&#x4EE5;&#x4E0A; 3 &#x4E2A;&#x8FC7;&#x7A0B;(&#x9012;&#x5F52;)
+</li>
+</ol>
+<p>
+&#x6838;&#x5FC3;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;:
+Python &#x7248;&#x672C;
+def quick<sub>sort</sub>(sort<sub>list</sub>, start, end):
+    if(start &gt;= end):
+        return sort<sub>list</sub>
+</p>
+
+<p>
+left<sub>point</sub> = start
+right<sub>point</sub> = end
+key = sort<sub>list[start]</sub>
+</p>
+
+<p>
+print &quot;start: %s&quot; % start
+print &quot;end: %s&quot; % end
+</p>
+
+<p>
+while(left<sub>point</sub> &lt; right<sub>point</sub>):
+    while(sort<sub>list[left</sub><sub>point]</sub> &lt;= key and left<sub>point</sub> &lt; right<sub>point</sub>):
+        left<sub>point</sub> = left<sub>point</sub> + 1
+    while(sort<sub>list[right</sub><sub>point]</sub> &gt;= key and left<sub>point</sub> &lt; right<sub>point</sub>):
+        right<sub>point</sub> = right<sub>point</sub> - 1
+</p>
+
+<p>
+sort<sub>list[left</sub><sub>point]</sub>, sort<sub>list[right</sub><sub>point]</sub> = sort<sub>list[right</sub><sub>point]</sub>, sort<sub>list[left</sub><sub>point]</sub>
+</p>
+
+<p>
+sort<sub>list[left</sub><sub>point]</sub>, sort<sub>list[start]</sub> = sort<sub>list[start]</sub>, sort<sub>list[left</sub><sub>point]</sub>
+</p>
+
+<p>
+if(start &lt; (left<sub>point</sub> - 1)):
+    quick<sub>sort</sub>(sort<sub>list</sub>, start, left<sub>point</sub> - 1)
+if((left<sub>point</sub> + 1) &lt; end):
+    quick<sub>sort</sub>(sort<sub>list</sub>, left<sub>point</sub> + 1, end)
+</p>
+</div>
+</li></ol>
+</div>
+<div id="outline-container-sec-1-2-2" class="outline-4">
+<h4 id="sec-1-2-2"><span class="section-number-4">1.2.2</span> &#x5176;&#x4ED6;&#x7B97;&#x6CD5;</h4>
+<div class="outline-text-4" id="text-1-2-2">
+</div><ol class="org-ol"><li><a id="sec-1-2-2-1" name="sec-1-2-2-1"></a>&#x6C42;&#x6700;&#x5927;&#x516C;&#x7EA6;&#x6570;<br><div class="outline-text-5" id="text-1-2-2-1">
+<p>
+Q: &#x7ED9;&#x51FA; X &amp; Y &#x4E24;&#x6570;&#xFF0C;&#x6C42;&#x4ED6;&#x4EEC;&#x7684;&#x6700;&#x5927;&#x516C;&#x7EA6;&#x6570;
+A: &#x6B27;&#x51E0;&#x91CC;&#x5FB7;&#x7B97;&#x6CD5;&#x53C8;&#x79F0;&#x8F97;&#x8F6C;&#x76F8;&#x9664;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x8BA1;&#x7B97;&#x4E24;&#x4E2A;&#x6574;&#x6570;a,b&#x7684;&#x6700;&#x5927;&#x516C;&#x7EA6;&#x6570;&#x3002;&#x5176;&#x8BA1;&#x7B97;&#x539F;&#x7406;&#x4F9D;&#x8D56;&#x4E8E;&#x4E0B;&#x9762;&#x7684;&#x5B9A;&#x7406;&#xFF1A;
+</p>
+
+<p>
+&#x5B9A;&#x7406;&#xFF1A;gcd(a,b) = gcd(b,a mod b)
+</p>
+
+<p>
+&#x8BC1;&#x660E;&#xFF1A;a&#x53EF;&#x4EE5;&#x8868;&#x793A;&#x6210;a = kb + r&#xFF0C;&#x5219;r = a mod b 
+&#x5047;&#x8BBE;d&#x662F;a,b&#x7684;&#x4E00;&#x4E2A;&#x516C;&#x7EA6;&#x6570;&#xFF0C;&#x5219;&#x6709; 
+d|a, d|b&#xFF0C;&#x800C;r = a - kb&#xFF0C;&#x56E0;&#x6B64;d|r 
+&#x56E0;&#x6B64;d&#x662F;(b,a mod b)&#x7684;&#x516C;&#x7EA6;&#x6570;
+</p>
+
+<p>
+&#x5047;&#x8BBE;d &#x662F;(b,a mod b)&#x7684;&#x516C;&#x7EA6;&#x6570;&#xFF0C;&#x5219; 
+d | b , d |r &#xFF0C;&#x4F46;&#x662F;a = kb +r 
+&#x56E0;&#x6B64;d&#x4E5F;&#x662F;(a,b)&#x7684;&#x516C;&#x7EA6;&#x6570;
+&#x56E0;&#x6B64;(a,b)&#x548C;(b,a mod b)&#x7684;&#x516C;&#x7EA6;&#x6570;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5176;&#x6700;&#x5927;&#x516C;&#x7EA6;&#x6570;&#x4E5F;&#x5FC5;&#x7136;&#x76F8;&#x7B49;&#xFF0C;&#x5F97;&#x8BC1;
+</p>
+</div>
+</li></ol>
+</div>
+</div>
+<div id="outline-container-sec-1-3" class="outline-3">
+<h3 id="sec-1-3"><span class="section-number-3">1.3</span> &#x5E38;&#x7528;&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
+<div class="outline-text-3" id="text-1-3">
+</div><div id="outline-container-sec-1-3-1" class="outline-4">
+<h4 id="sec-1-3-1"><span class="section-number-4">1.3.1</span> &#x94FE;&#x8868;</h4>
+<div class="outline-text-4" id="text-1-3-1">
+</div><ol class="org-ol"><li><a id="sec-1-3-1-1" name="sec-1-3-1-1"></a>&#x5355;&#x94FE;&#x8868;&#x8F6C;&#x7F6E;<br><div class="outline-text-5" id="text-1-3-1-1">
+<p>
+&#x8BE6;&#x89E3;:
+0&#x6B65;: 1 -&gt; 2 -&gt; 3 -&gt; 4
+1&#x6B65;: 2 -&gt; 1 -&gt; 3 -&gt; 4
+2&#x6B65;: 3 -&gt; 2 -&gt; 1 -&gt; 4
+3&#x6B65;: 4 -&gt; 3 -&gt; 2 -&gt; 1
+</p>
+
+<p>
+&#x6B65;&#x9AA4;&#x62C6;&#x89E3;:
+</p>
+<ol class="org-ol">
+<li>&#x5C06;&#x5F85;&#x8F6C;&#x7F6E;&#x5143;&#x7D20;&#x4ECE;&#x539F;&#x94FE;&#x8868;&#x5220;&#x9664;
+</li>
+<li>&#x5C06;&#x8F6C;&#x7F6E;&#x5143;&#x7D20;&#x63D2;&#x5165;&#x5230;&#x5934;&#x7ED3;&#x70B9;&#x4E4B;&#x524D;
+</li>
+</ol>
+
+<p>
+&#x4EE3;&#x7801;&#x5B9E;&#x73B0;(Python):
+</p>
+<p>
+def reserve<sub>by</sub><sub>loop</sub>(List):
+    if(List <code>= None &amp;&amp; List.next =</code> None):
+        return List
+</p>
+
+<p>
+head = List # &#x8BB0;&#x5F55;&#x94FE;&#x8868;&#x5F53;&#x524D;&#x7684;&#x5934;&#x7ED3;&#x70B9;
+cur = None # &#x5F85;&#x8F6C;&#x7F6E;&#x5143;&#x7D20;
+pre = List # &#x539F;&#x94FE;&#x8868;&#x5934;&#x7ED3;&#x70B9;
+while(pre.next != None):
+    cur = pre.next
+    pre.next = cur.next
+    cur.next = head
+    head = cur
+</p>
+
+<p>
+return head
+</p>
+</div>
+</li></ol>
+</div>
+</div>
+</div>
+
+<p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-08 19:55&gt;</span></span></p>
+<p class="author">Author: levin</p>
+<p class="date">Created: 2017-01-01 Sun 14:32</p>
+<p class="creator"><a href="http://www.gnu.org/software/emacs/" target="_blank" rel="external">Emacs</a> 25.1.1 (<a href="http://orgmode.org" target="_blank" rel="external">Org</a> mode 8.2.10)</p>
+<p class="validation"><a href="http://validator.w3.org/check?uri=referer" target="_blank" rel="external">Validate</a></p>
+</div></article></div></section><footer><div class="paginator"><a href="/2016-09-/django/" class="prev">PREV</a></div><div class="copyright"><p>© 2015 - 2017 <a href="http://yoursite.com">Levin Lee</a>, unless otherwise noted.</p></div></footer></div><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>

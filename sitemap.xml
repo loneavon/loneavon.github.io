@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/django/</loc>
+    
+    <lastmod>2017-01-01T06:31:37.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/learning-design-pattern/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/use-org-mode-for-GTD/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/emacs-configure/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/fluentd_install/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/flume/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/graph/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/algorithm/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/learning-spark-streaming/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/other/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017-01-/sitemap/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017-01-/theindex/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017-01-/to-integrate-kafka-manager-on-ambari/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2016-09-/tool-stack/</loc>
+    
+    <lastmod>2017-01-01T06:19:16.000Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017-01-/hello-world/</loc>
+    
+    <lastmod>2016-12-31T18:31:00.000Z</lastmod>
+    
+  </url>
+  
+</urlset>
