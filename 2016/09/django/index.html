@@ -1,44 +1,22 @@
 <!DOCTYPE html><html><head><meta charset="utf-8"><meta name="X-UA-Compatible" content="IE=edge"><title> Django 实用操作 · LevinCode</title><meta name="description" content="Django 实用操作 - Levin Lee"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="short icon" href="/favicon.png"><link rel="stylesheet" href="/css/apollo.css"><link rel="stylesheet" href="http://fonts.useso.com/css?family=Source+Sans+Pro:400,600" type="text/css"></head><body><div id="mask" style="display: none;"><img id="mask-image" src="#" style=" "></div><div class="wrap"><header><a href="/" class="logo-link"><img src="/favicon.png"></a><ul class="nav nav-list"><li class="nav-list-item"><a href="/" target="_self" class="nav-list-link">BLOG</a></li><li class="nav-list-item"><a href="/archives/" target="_self" class="nav-list-link">ARCHIVE</a></li><li class="nav-list-item"><a href="/tags/" target="_self" class="nav-list-link">TAGS</a></li><li class="nav-list-item"><a href="/about/" target="_self" class="nav-list-link">ABOUT</a></li></ul></header><section class="container"><div class="post"><article class="post-block"><h1 class="post-title">Django 实用操作</h1><div class="post-time">Sep 8, 2016</div><div class="post-content">
 
-<div id="table-of-contents">
-<h2>Table of Contents</h2>
-<div id="text-table-of-contents">
-<ul>
-<li><a href="#sec-1">1. Django &#x5B9E;&#x7528;&#x547D;&#x4EE4;</a>
-<ul>
-<li><a href="#sec-1-1">1.1. &#x540C;&#x6B65;&#x5DF2;&#x6709;&#x6570;&#x636E;&#x5E93;&#x751F;&#x6210; models</a></li>
-</ul>
-</li>
-<li><a href="#sec-2">2. Django &#x5B9E;&#x7528;&#x6280;&#x80FD;</a>
-<ul>
-<li><a href="#sec-2-1">2.1. &#x591A;&#x6570;&#x636E;&#x5E93;&#x8BBF;&#x95EE;&#x5229;&#x5668; db router</a></li>
-<li><a href="#sec-2-2">2.2. &#x81EA;&#x5B9A;&#x4E49; template &#x6807;&#x7B7E; &amp; &#x8FC7;&#x6EE4;&#x5668;</a></li>
-<li><a href="#sec-2-3">2.3. &#x5B9A;&#x5236; django &#x7BA1;&#x7406;&#x547D;&#x4EE4;(commands)</a></li>
-<li><a href="#sec-2-4">2.4. Django models &#x6570;&#x636E;&#x5E93;&#x8BB0;&#x5F55;&#x6279;&#x91CF;&#x5BFC;&#x5165;</a></li>
-<li><a href="#sec-2-5">2.5. &#x901A;&#x8FC7; models &#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;</a></li>
-<li><a href="#sec-2-6">2.6. django &#x8F6C;&#x4E49; autoescape</a></li>
-</ul>
-</li>
-</ul>
-</div>
-</div>
 <div id="outline-container-sec-1" class="outline-2">
-<h2 id="sec-1"><span class="section-number-2">1</span> Django &#x5B9E;&#x7528;&#x547D;&#x4EE4;</h2>
+<h2 id="sec-1">Django &#x5B9E;&#x7528;&#x547D;&#x4EE4;</h2>
 <div class="outline-text-2" id="text-1">
 </div><div id="outline-container-sec-1-1" class="outline-3">
-<h3 id="sec-1-1"><span class="section-number-3">1.1</span> &#x540C;&#x6B65;&#x5DF2;&#x6709;&#x6570;&#x636E;&#x5E93;&#x751F;&#x6210; models</h3>
+<h3 id="sec-1-1">&#x540C;&#x6B65;&#x5DF2;&#x6709;&#x6570;&#x636E;&#x5E93;&#x751F;&#x6210; models</h3>
 <div class="outline-text-3" id="text-1-1">
 <p>
-python manage.py inspectdb &#x2013;database &apos;{db<sub>name</sub>}&apos;
+python manage.py inspectdb &#x2013;database &apos;{db_name}&apos;
 </p>
 </div>
 </div>
 </div>
 <div id="outline-container-sec-2" class="outline-2">
-<h2 id="sec-2"><span class="section-number-2">2</span> Django &#x5B9E;&#x7528;&#x6280;&#x80FD;</h2>
+<h2 id="sec-2">Django &#x5B9E;&#x7528;&#x6280;&#x80FD;</h2>
 <div class="outline-text-2" id="text-2">
 </div><div id="outline-container-sec-2-1" class="outline-3">
-<h3 id="sec-2-1"><span class="section-number-3">2.1</span> &#x591A;&#x6570;&#x636E;&#x5E93;&#x8BBF;&#x95EE;&#x5229;&#x5668; db router</h3>
+<h3 id="sec-2-1">&#x591A;&#x6570;&#x636E;&#x5E93;&#x8BBF;&#x95EE;&#x5229;&#x5668; db router</h3>
 <div class="outline-text-3" id="text-2-1">
 <p>
 Django &#x5728;&#x591A;&#x6570;&#x636E;&#x5E93;&#x4E0B;&#x63D0;&#x4F9B;&#x4E86; db router &#x6765;&#x63A7;&#x5236;&#x8BF7;&#x6C42;&#x7684;&#x8BFB;&#x3001;&#x5199;&#x3001;relation&#x3001;migrate
@@ -51,13 +29,13 @@ For example:(&#x5404;&#x4E2A;&#x65B9;&#x6CD5;&#x7B56;&#x7565;&#x5747;&#x53EF;&#x
 <ol class="org-ol">
 <li>&#x5728;&#x6BCF;&#x4E2A; models &#x6587;&#x4EF6;&#x7684; Class &#x4E2D;&#x6DFB;&#x52A0; _database &#x6307;&#x5B9A;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x540D;&#x8981;&#x4E0E; setting &#x4E2D;&#x4FDD;&#x6301;&#x4E00;&#x81F4;
 </li>
-<li>&#x5728; setting &#x4E2D;&#x6DFB;&#x52A0; db router &#x8BBE;&#x7F6E;: DATABASE<sub>ROUTERS</sub> = [&apos;bdg.db<sub>router</sub>.DbRouter&apos;]
+<li>&#x5728; setting &#x4E2D;&#x6DFB;&#x52A0; db router &#x8BBE;&#x7F6E;: DATABASE_ROUTERS = [&apos;bdg.db_router.DbRouter&apos;]
 </li>
 </ol>
 </div>
 </div>
 <div id="outline-container-sec-2-2" class="outline-3">
-<h3 id="sec-2-2"><span class="section-number-3">2.2</span> &#x81EA;&#x5B9A;&#x4E49; template &#x6807;&#x7B7E; &amp; &#x8FC7;&#x6EE4;&#x5668;</h3>
+<h3 id="sec-2-2">&#x81EA;&#x5B9A;&#x4E49; template &#x6807;&#x7B7E; &amp; &#x8FC7;&#x6EE4;&#x5668;</h3>
 <div class="outline-text-3" id="text-2-2">
 <p>
 Django &#x63D0;&#x4F9B;&#x81EA;&#x5B9A;&#x4E49; template &#x6807;&#x7B7E; &amp; &#x8FC7;&#x6EE4;&#x5668;&#x7684;&#x529F;&#x80FD;, &#x7528;&#x6765;&#x4E30;&#x5BCC;&#x81EA;&#x5E26;&#x7684; template
@@ -71,17 +49,18 @@ Django &#x63D0;&#x4F9B;&#x81EA;&#x5B9A;&#x4E49; template &#x6807;&#x7B7E; &amp; 
 <p>
 For example:&#xFF08;&#x5177;&#x4F53;&#x8BF7;&#x53C2;&#x89C1;: <a href="https://docs.djangoproject.com/en/1.9/howto/custom-template-tags/" target="_blank" rel="external">https://docs.djangoproject.com/en/1.9/howto/custom-template-tags/</a> &#xFF09;
 </p>
+<a id="more"></a>
 <div class="org-src-container">
 
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">import</span> datetime</span><br><span class="line"><span class="keyword">from</span> django <span class="keyword">import</span> template</span><br><span class="line"></span><br><span class="line">register = template.Library()</span><br><span class="line"></span><br><span class="line"><span class="decorator">@register.simple_tag</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">current_time</span><span class="params">(format_string)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> datetime.datetime.now().strftime(format_string)</span><br><span class="line"></span><br><span class="line"><span class="decorator">@register.filter(name=&apos;cut&apos;)</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">cut</span><span class="params">(value, arg)</span>:</span></span><br><span class="line">    <span class="keyword">return</span> value.replace(arg, <span class="string">&apos;&apos;</span>)</span><br></pre></td></tr></table></figure>
 </div>
 <p>
-&#x5728;&#x6A21;&#x677F;&#x6587;&#x4EF6;(html &#x6587;&#x4EF6;)&#x4E2D;&#x5F15;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x6216;&#x8005;&#x8FC7;&#x6EE4;&#x5668;: load &apos;module<sub>name&apos;</sub> 
+&#x5728;&#x6A21;&#x677F;&#x6587;&#x4EF6;(html &#x6587;&#x4EF6;)&#x4E2D;&#x5F15;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x81EA;&#x5B9A;&#x4E49;&#x6807;&#x7B7E;&#x6216;&#x8005;&#x8FC7;&#x6EE4;&#x5668;: load &apos;module_name&apos; 
 </p>
 </div>
 </div>
 <div id="outline-container-sec-2-3" class="outline-3">
-<h3 id="sec-2-3"><span class="section-number-3">2.3</span> &#x5B9A;&#x5236; django &#x7BA1;&#x7406;&#x547D;&#x4EE4;(commands)</h3>
+<h3 id="sec-2-3">&#x5B9A;&#x5236; django &#x7BA1;&#x7406;&#x547D;&#x4EE4;(commands)</h3>
 <div class="outline-text-3" id="text-2-3">
 <p>
 Django &#x63D0;&#x4F9B;&#x673A;&#x5236;&#x6765;&#x4F7F;&#x7528;&#x6237;&#x5B9A;&#x4E49;&#x81EA;&#x5DF1;&#x7684;&#x7BA1;&#x7406;&#x547D;&#x4EE4;
@@ -97,7 +76,7 @@ Django &#x63D0;&#x4F9B;&#x673A;&#x5236;&#x6765;&#x4F7F;&#x7528;&#x6237;&#x5B9A;&
 <figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="keyword">from</span> django.core.management.base <span class="keyword">import</span> BaseCommand, CommandError</span><br><span class="line"><span class="keyword">from</span> polls.models <span class="keyword">import</span> Poll</span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Command</span><span class="params">(BaseCommand)</span>:</span></span><br><span class="line">    help = <span class="string">&apos;Closes the specified poll for voting&apos;</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">add_arguments</span><span class="params">(self, parser)</span>:</span></span><br><span class="line">	parser.add_argument(<span class="string">&apos;poll_id&apos;</span>, nargs=<span class="string">&apos;+&apos;</span>, type=int)</span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">handle</span><span class="params">(self, *args, **options)</span>:</span></span><br><span class="line">	<span class="keyword">for</span> poll_id <span class="keyword">in</span> options[<span class="string">&apos;poll_id&apos;</span>]:</span><br><span class="line">	    <span class="keyword">try</span>:</span><br><span class="line">		poll = Poll.objects.get(pk=poll_id)</span><br><span class="line">	    <span class="keyword">except</span> Poll.DoesNotExist:</span><br><span class="line">		<span class="keyword">raise</span> CommandError(<span class="string">&apos;Poll &quot;%s&quot; does not exist&apos;</span> % poll_id)</span><br><span class="line"></span><br><span class="line">	    poll.opened = <span class="keyword">False</span></span><br><span class="line">	    poll.save()</span><br><span class="line"></span><br><span class="line">	    self.stdout.write(self.style.SUCCESS(<span class="string">&apos;Successfully closed poll &quot;%s&quot;&apos;</span> % poll_</span><br></pre></td></tr></table></figure>
 </div>
 <ul class="org-ul">
-<li>add<sub>arguments</sub> &#x8C03;&#x7528; parser.add<sub>argument</sub> (Django 1.8 &#x540E;&#x4F7F;&#x7528; argparser &#x89E3;&#x6790;&#x53C2;&#x6570;&#xFF0C;&#x5C06;&#x89E3;&#x6790;&#x540E;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9; options) &#x89E3;&#x6790;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;, add<sub>argument</sub> &#x5177;&#x4F53;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x8BF7;&#x53C2;&#x89C1;:<a href="https://docs.python.org/3/library/argparse.html#module-argparse" target="_blank" rel="external">https://docs.python.org/3/library/argparse.html#module-argparse</a>
+<li>add_arguments &#x8C03;&#x7528; parser.add_argument (Django 1.8 &#x540E;&#x4F7F;&#x7528; argparser &#x89E3;&#x6790;&#x53C2;&#x6570;&#xFF0C;&#x5C06;&#x89E3;&#x6790;&#x540E;&#x7684;&#x53C2;&#x6570;&#x4F20;&#x9012;&#x7ED9; options) &#x89E3;&#x6790;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;, add_argument &#x5177;&#x4F53;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x8BF7;&#x53C2;&#x89C1;:<a href="https://docs.python.org/3/library/argparse.html#module-argparse" target="_blank" rel="external">https://docs.python.org/3/library/argparse.html#module-argparse</a>
 </li>
 <li>handle &#x4E3A;&#x5B9E;&#x9645;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x901A;&#x8FC7; options &#x83B7;&#x53D6;&#x547D;&#x4EE4;&#x884C;&#x53C2;&#x6570;
 </li>
@@ -114,20 +93,20 @@ Django &#x63D0;&#x4F9B;&#x673A;&#x5236;&#x6765;&#x4F7F;&#x7528;&#x6237;&#x5B9A;&
 </div>
 </div>
 <div id="outline-container-sec-2-4" class="outline-3">
-<h3 id="sec-2-4"><span class="section-number-3">2.4</span> Django models &#x6570;&#x636E;&#x5E93;&#x8BB0;&#x5F55;&#x6279;&#x91CF;&#x5BFC;&#x5165;</h3>
+<h3 id="sec-2-4">Django models &#x6570;&#x636E;&#x5E93;&#x8BB0;&#x5F55;&#x6279;&#x91CF;&#x5BFC;&#x5165;</h3>
 <div class="outline-text-3" id="text-2-4">
 <p>
-django models &#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x6279;&#x91CF;&#x5C06;&#x6570;&#x636E;&#x5BFC;&#x5165;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5; bulk<sub>create</sub>()
-eg: &#x82E5; model &#x7C7B;&#x540D;&#x4E3A; bdgop, &#x63D2;&#x5165;&#x65B9;&#x6CD5;&#x4E3A; bdgop.objects.bulk<sub>create</sub>(records)
+django models &#x5BF9;&#x8C61;&#x63D0;&#x4F9B;&#x6279;&#x91CF;&#x5C06;&#x6570;&#x636E;&#x5BFC;&#x5165;&#x6570;&#x636E;&#x7684;&#x65B9;&#x6CD5; bulk_create()
+eg: &#x82E5; model &#x7C7B;&#x540D;&#x4E3A; bdgop, &#x63D2;&#x5165;&#x65B9;&#x6CD5;&#x4E3A; bdgop.objects.bulk_create(records)
 records &#x4E3A;&#x5217;&#x8868;, &#x5217;&#x8868;&#x683C;&#x5F0F;&#x4E3A; records.append(bdgop(name=&apos;liwen&apos;))
 </p>
 </div>
 </div>
 <div id="outline-container-sec-2-5" class="outline-3">
-<h3 id="sec-2-5"><span class="section-number-3">2.5</span> &#x901A;&#x8FC7; models &#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;</h3>
+<h3 id="sec-2-5">&#x901A;&#x8FC7; models &#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;</h3>
 <div class="outline-text-3" id="text-2-5">
 <ul class="org-ul">
-<li>&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x8FD4;&#x56DE;&#x5F02;&#x5E38;: OperationalError: (1054, &quot;Unknown column &apos;table<sub>graph</sub><sub>info</sub>.id&apos; in &apos;field list&apos;&quot;)
+<li>&#x8BBF;&#x95EE;&#x6570;&#x636E;&#x5E93;&#x8FD4;&#x56DE;&#x5F02;&#x5E38;: OperationalError: (1054, &quot;Unknown column &apos;table_graph_info.id&apos; in &apos;field list&apos;&quot;)
 </li>
 </ul>
 <p>
@@ -136,7 +115,7 @@ records &#x4E3A;&#x5217;&#x8868;, &#x5217;&#x8868;&#x683C;&#x5F0F;&#x4E3A; recor
 </div>
 </div>
 <div id="outline-container-sec-2-6" class="outline-3">
-<h3 id="sec-2-6"><span class="section-number-3">2.6</span> django &#x8F6C;&#x4E49; autoescape</h3>
+<h3 id="sec-2-6">django &#x8F6C;&#x4E49; autoescape</h3>
 <div class="outline-text-3" id="text-2-6">
 <p>
 &#x5C06;&#x4F20;&#x9012;&#x7ED9; html &#x524D;&#x7AEF;&#x7684;&#x5B57;&#x7B26;&#x4FDD;&#x6301;, &#x4E0D;&#x505A;&#x8F6C;&#x4E49;, &#x73B0;&#x5728;&#x8FD8;&#x4E0D;&#x662F;&#x7279;&#x522B;&#x6E05;&#x695A;, &#x4F46;&#x662F;&#x592A;&#x725B;&#x903C;&#x4E86;, &#x540E;&#x9762;&#x518D;&#x8BE6;&#x7EC6;&#x4E86;&#x89E3;
@@ -147,7 +126,15 @@ records &#x4E3A;&#x5217;&#x8868;, &#x5217;&#x8868;&#x683C;&#x5F0F;&#x4E3A; recor
 
 <p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-08 20:07&gt;</span></span></p>
 <p class="author">Author: levin</p>
-<p class="date">Created: 2017-01-01 Sun 14:32</p>
+<p class="date">Created: 2017-01-02 Mon 01:42</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/" target="_blank" rel="external">Emacs</a> 25.1.1 (<a href="http://orgmode.org" target="_blank" rel="external">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer" target="_blank" rel="external">Validate</a></p>
-</div></article></div></section><footer><div class="paginator"><a href="/2016/09/flume/" class="prev">上一篇</a><a href="/2016/09/algorithm/" class="next">下一篇</a></div><div class="copyright"><p>© 2015 - 2017 <a href="http://levincode.com">Levin Lee</a>, unless otherwise noted.</p></div></footer></div><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-65933410-1",'auto');ga('send','pageview');</script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
+</div></article></div></section><footer><div class="paginator"><a href="/2016/09/flume/" class="prev">上一篇</a><a href="/2016/09/algorithm/" class="next">下一篇</a></div><div id="disqus_thread"></div><script>var disqus_shortname = 'levinlee';
+var disqus_identifier = '2016/09/django/';
+var disqus_title = 'Django 实用操作';
+var disqus_url = 'http://levincode.com/2016/09/django/';
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();</script><script id="dsq-count-scr" src="//levinlee.disqus.com/count.js" async></script><div class="copyright"><p>© 2016 - 2017 <a href="http://levincode.com">Levin Lee</a>, unless otherwise noted.</p></div></footer></div><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;e=o.createElement(i);r=o.getElementsByTagName(i)[0];e.src='//www.google-analytics.com/analytics.js';r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));ga('create',"UA-85531845-1",'auto');ga('send','pageview');</script><script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML"></script></body></html>
