@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://levincode.com/"/>
-  <updated>2017-01-01T17:05:11.000Z</updated>
+  <updated>2017-01-02T07:25:02.000Z</updated>
   <id>http://levincode.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://levincode.com/2017/01/test-for-hexo/"/>
     <id>http://levincode.com/2017/01/test-for-hexo/</id>
     <published>2017-01-01T00:00:00.000Z</published>
-    <updated>2017-01-01T17:05:11.000Z</updated>
+    <updated>2017-01-02T07:25:02.000Z</updated>
     
     <content type="html"><![CDATA[
 
@@ -40,7 +40,7 @@
 
 <p class="date">Date: 2017-01-01</p>
 <p class="author">Author: loneavon</p>
-<p class="date">Created: 2017-01-02 Mon 01:42</p>
+<p class="date">Created: 2017-01-02 Mon 15:26</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/" target="_blank" rel="external">Emacs</a> 25.1.1 (<a href="http://orgmode.org" target="_blank" rel="external">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer" target="_blank" rel="external">Validate</a></p>
 ]]></content>
@@ -70,7 +70,7 @@
     <link href="http://levincode.com/2016/09/learning-spark-streaming/"/>
     <id>http://levincode.com/2016/09/learning-spark-streaming/</id>
     <published>2016-09-09T06:51:00.000Z</published>
-    <updated>2017-01-01T17:08:02.000Z</updated>
+    <updated>2017-01-02T07:25:48.000Z</updated>
     
     <content type="html"><![CDATA[
 
@@ -218,8 +218,8 @@ Spark &#x7533;&#x8BF7;&#x8D44;&#x6E90;&#x65F6;&#x662F;&#x6309;&#x7167; Executor 
 </div>
 
 <p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-09 14:51&gt;</span></span></p>
-<p class="author">Author: levin</p>
-<p class="date">Created: 2017-01-02 Mon 01:42</p>
+<p class="author">Author: loneavon</p>
+<p class="date">Created: 2017-01-02 Mon 15:26</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/" target="_blank" rel="external">Emacs</a> 25.1.1 (<a href="http://orgmode.org" target="_blank" rel="external">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer" target="_blank" rel="external">Validate</a></p>
 ]]></content>
@@ -236,6 +236,10 @@ Spark &#x7533;&#x8BF7;&#x8D44;&#x6E90;&#x65F6;&#x662F;&#x6309;&#x7167; Executor 
     
     </summary>
     
+    
+      <category term="spark" scheme="http://levincode.com/tags/spark/"/>
+    
+      <category term="streaming" scheme="http://levincode.com/tags/streaming/"/>
     
   </entry>
   
@@ -1044,7 +1048,7 @@ For example:&amp;#xFF08;&amp;#x5177;&amp;#x4F53;&amp;#x8BF7;&amp;#x53C2;&amp;#x8
     <link href="http://levincode.com/2016/09/algorithm/"/>
     <id>http://levincode.com/2016/09/algorithm/</id>
     <published>2016-09-08T11:55:00.000Z</published>
-    <updated>2017-01-01T17:05:11.000Z</updated>
+    <updated>2017-01-02T07:26:21.000Z</updated>
     
     <content type="html"><![CDATA[
 
@@ -1224,8 +1228,8 @@ return head
 </div>
 
 <p class="date">Date: <span class="timestamp-wrapper"><span class="timestamp">&lt;2016-09-08 19:55&gt;</span></span></p>
-<p class="author">Author: levin</p>
-<p class="date">Created: 2017-01-02 Mon 01:42</p>
+<p class="author">Author: loneavon</p>
+<p class="date">Created: 2017-01-02 Mon 15:26</p>
 <p class="creator"><a href="http://www.gnu.org/software/emacs/" target="_blank" rel="external">Emacs</a> 25.1.1 (<a href="http://orgmode.org" target="_blank" rel="external">Org</a> mode 8.2.10)</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer" target="_blank" rel="external">Validate</a></p>
 ]]></content>
@@ -1242,6 +1246,10 @@ return head
     
     </summary>
     
+    
+      <category term="algorithm" scheme="http://levincode.com/tags/algorithm/"/>
+    
+      <category term="data structure" scheme="http://levincode.com/tags/data-structure/"/>
     
   </entry>
   
